@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Water Damage & Mold Help — Twin Cities | Exclusive Local Contractor</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: #f1f5f9; color: #1e293b; }
+  .hero { background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 100%); color: white; padding: 48px 20px; text-align: center; }
+  .hero h1 { font-size: 2.1rem; margin: 0 0 12px; }
+  .hero p { font-size: 1.15rem; max-width: 640px; margin: 0 auto 20px; opacity: 0.95; }
+  .container { max-width: 640px; margin: -40px auto 40px; padding: 0 16px; }
+  .card { background: white; border-radius: 12px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  label { display: block; margin: 14px 0 6px; font-weight: 600; }
+  input, select, textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 16px; }
+  button { width: 100%; background: #0ea5e9; color: white; border: none; padding: 14px; border-radius: 8px; font-size: 17px; font-weight: 600; cursor: pointer; margin-top: 18px; }
+  button:hover { background: #0284c7; }
+  .trust { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.9rem; color: #e0f2fe; flex-wrap: wrap; }
+  .note { font-size: 0.85rem; color: #64748b; margin-top: 12px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Water Damage, Mold & Air Quality Help</h1>
+    <p>Fast response from one licensed Twin Cities restoration contractor. We handle water damage restoration, dry-out, mold inspection/remediation, and indoor air quality testing.</p>
+    <div class="trust">
+      <span>✓ 24/7 Emergency Response</span>
+      <span>✓ Exclusive — No Shared Leads</span>
+      <span>✓ Full Job Management</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <form id="leadForm">
+        <label>What do you need? *</label>
+        <select name="service_type" required>
+          <option value="">Select...</option>
+          <option value="water_damage">Water Damage Restoration</option>
+          <option value="dry_out">Dry Out Services</option>
+          <option value="mold_mitigation">Mold Mitigation</option>
+          <option value="mold_inspection">Mold Inspection</option>
+          <option value="mold_remediation">Mold Remediation</option>
+          <option value="iaq_testing">Indoor Air Quality Testing</option>
+        </select>
+
+        <label>How urgent? *</label>
+        <select name="urgency" required>
+          <option value="">Select...</option>
+          <option value="emergency">Emergency — active water damage</option>
+          <option value="asap">Within 24–48 hours</option>
+          <option value="this_week">Within the next week</option>
+          <option value="planning">Planning / non-emergency</option>
+        </select>
+
+        <label>Property Type *</label>
+        <select name="property_type" required>
+          <option value="">Select...</option>
+          <option value="single_family">Single-family home</option>
+          <option value="condo">Condo / Townhome</option>
+          <option value="multi_family">Multi-family</option>
+          <option value="commercial">Commercial</option>
+        </select>
+
+        <label>ZIP Code *</label>
+        <input type="text" name="zip" pattern="[0-9]{5}" required placeholder="55406">
+
+        <label>Your Name *</label>
+        <input type="text" name="name" required>
+
+        <label>Phone *</label>
+        <input type="tel" name="phone" required placeholder="(612) 555-1234">
+
+        <label>Email *</label>
+        <input type="email" name="email" required>
+
+        <label>Are you the owner or decision maker?</label>
+        <select name="decision_maker">
+          <option value="yes">Yes</option>
+          <option value="no">Shared decision</option>
+        </select>
+
+        <label>Describe the situation</label>
+        <textarea name="details" rows="3" placeholder="What happened? Location of water or mold?"></textarea>
+
+        <button type="submit">Get Help Now</button>
+        <p class="note">Your information goes only to our primary Twin Cities restoration contractor. No shared marketplace leads.</p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Request received. Our restoration team will contact you shortly. (Connect this form to your backend in production.)');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
