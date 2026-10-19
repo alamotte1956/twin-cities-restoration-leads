@@ -8,8 +8,8 @@ app.secret_key = "restoration-leads-prototype-2026"
 leads = []
 
 PRIMARY_CONTRACTOR = {
-    "name": "Twin Cities Restoration Co.",
-    "phone": "(612) 555-0199",
+    "name": "Diamond Restoration Services LLC",
+    "phone": "(612) 306-1043",
     "email": "leads@tc-restoration.example",
     "service_area": "Minneapolis–St. Paul metro and select suburbs",
     "specialties": [
